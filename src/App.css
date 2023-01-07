@@ -1,38 +1,177 @@
-.App {
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Variable CSS */
+:root {
+  --header_height: 3rem;
+  /* Colors */
+  --hue: 0;
+  --sat: 0%;
+  --title_color: hsl(var(--hue), var(--sat), 20%);
+  --title_color_dark: hsl(var(--hue), var(--sat), 0%);
+  --text_color: hsl(var(--hue), var(--sat), 46%);
+  --body_color: hsl(var(--hue), var(--sat), 98%);
+  --container_color: #fff;
+
+  /* Font and typhography */
+  --body_font: "poppins", "sans-serif";
+
+  /* Font size */
+  --big_font_size: 3.5rem;
+  --h1_font_size: 2.25rem;
+  --h2_font_size: 1.5rem;
+  --h3_font_size: 1.25rem;
+  --normal_font_size: 1rem;
+  --small_font_size: 0.875rem;
+  --smaller_font_size: 0.813rem;
+  --tiny_font_size: 0.625rem;
+
+  /* Font weight */
+  --font_normal: 400;
+  --font_medium: 500;
+  --font_semi_bold: 600;
+
+  /* Margenes Bottom */
+  --mb_0_25: 0.25rem;
+  --mb_0_5: 0.5rem;
+  --mb_0_75: 0.75rem;
+  --mb_1: 1rem;
+  --mb_1_5: 1.5;
+  --mb_2: 2rem;
+  --mb_2_5: 2.5rem;
+  --mb_3: 3rem;
+
+  /* z index */
+  --z_tooltip: 10;
+  --z_fixed: 100;
+  --z_modal: 1000;
+}
+
+/* Responsive Typhography */
+@media screen and (max-width: 992px) {
+  :root {
+    --big_font_size: 2.75rem;
+    --h1_font_size: 1.5rem;
+    --h2_font_size: 1.25rem;
+    --h3_font_size: 1rem;
+    --normal_font_size: 0.938rem;
+    --small_font_size: 0.813rem;
+    --smaller_font_size: 0.75rem;
+  }
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body_font);
+  font-size: var(--normal_font_size);
+}
+
+body {
+  background-color: var(--body_color);
+  color: var(--text_color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title_color);
+  font-weight: var(--font_semi_bold);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 6rem 0 2rem;
+}
+.section_title {
+  font-size: var(--h1_font_size);
+  color: var(--title_color);
+}
+.section_subtitle {
+  display: block;
+  font-size: var(--small_font_size);
+  margin-bottom: 4rem;
+}
+
+.section_title,
+.section_subtitle {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Layout */
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  display: grid;
+  gap: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--container_color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font_medium);
+}
+
+.button:hover {
+  background-color: var(--title_color_dark);
+}
+
+.button_icon {
+  margin-left: var(--mb_0_5);
+}
+
+.button_flex {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Break Points */
+/* for large device */
+@media screen and (max-width: 992px) {
+}
+/* for madium devices */
+@media screen and (max-width: 768px) {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 576px) {
+}
+
+/* for small devices */
+
+@media screen and (max-width: 350px) {
 }
