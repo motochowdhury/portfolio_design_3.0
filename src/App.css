@@ -36,7 +36,7 @@
   --mb_0_5: 0.5rem;
   --mb_0_75: 0.75rem;
   --mb_1: 1rem;
-  --mb_1_5: 1.5;
+  --mb_1_5: 1.5rem;
   --mb_2: 2rem;
   --mb_2_5: 2.5rem;
   --mb_3: 3rem;
@@ -95,7 +95,7 @@ ul {
   list-style: none;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 button {
   cursor: pointer;
@@ -163,6 +163,10 @@ img {
 /* Break Points */
 /* for large device */
 @media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb_1_5);
+    margin-right: var(--mb_1_5);
+  }
 }
 /* for madium devices */
 @media screen and (max-width: 768px) {

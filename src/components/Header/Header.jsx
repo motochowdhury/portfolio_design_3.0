@@ -6,13 +6,13 @@ export const Header = () => {
     <>
       <header className="header">
         <nav className="nav container">
-          <a href="index.html" className="lav_logo">
+          <a href="index.html" className="nav_logo">
             MotoChowdhury
           </a>
           <div className="nav_menu">
             <ul className="nav_list grid">
               <li className="nav_item">
-                <a href="#home" className="nav_link">
+                <a href="#home" className="nav_link active_link">
                   <i className="uil uil-estate nav_icon"></i>
                   Home
                 </a>
@@ -43,9 +43,9 @@ export const Header = () => {
               </li>
             </ul>
             <i className="uil uil-times nav_close"></i>
-            <div className="nav_toggle">
-              <i className="uil uil-apps"></i>
-            </div>
+          </div>
+          <div className="nav_toggle">
+            <i className="uil uil-apps"></i>
           </div>
         </nav>
       </header>
