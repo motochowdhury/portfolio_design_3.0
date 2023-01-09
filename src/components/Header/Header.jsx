@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 
 export const Header = () => {
+  // Toggle_Menu
+  const [toggle, showMenu] = useState(false);
   return (
     <>
       <header className="header">
@@ -9,7 +11,7 @@ export const Header = () => {
           <a href="index.html" className="nav_logo">
             MotoChowdhury
           </a>
-          <div className="nav_menu">
+          <div className={toggle ? "nav_menu show_manu" : "nav_menu"}>
             <ul className="nav_list grid">
               <li className="nav_item">
                 <a href="#home" className="nav_link active_link">
@@ -42,10 +44,13 @@ export const Header = () => {
                 </a>
               </li>
             </ul>
-            <i className="uil uil-times nav_close"></i>
+            <i
+              className="uil uil-times nav_close"
+              onClick={() => showMenu(!toggle)}
+            ></i>
           </div>
           <div className="nav_toggle">
-            <i className="uil uil-apps"></i>
+            <i className="uil uil-apps" onClick={() => showMenu(!toggle)}></i>
           </div>
         </nav>
       </header>

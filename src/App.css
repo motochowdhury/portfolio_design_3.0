@@ -178,4 +178,8 @@ img {
 /* for small devices */
 
 @media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb_1);
+    margin-right: var(--mb_1);
+  }
 }
