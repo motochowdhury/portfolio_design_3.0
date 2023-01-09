@@ -50,7 +50,7 @@ export const Header = () => {
             ></i>
           </div>
           <div className="nav_toggle">
-            <i className="uil uil-apps" onClick={() => showMenu(!toggle)}></i>
+            <i className="uil uil-icons" onClick={() => showMenu(!toggle)}></i>
           </div>
         </nav>
       </header>
