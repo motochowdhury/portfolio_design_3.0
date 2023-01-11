@@ -5,6 +5,20 @@
   align-items: center;
 }
 
+/* Profile Image */
+.home_img {
+  background: url("../../assets/my_picture_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+  order: 1;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
 /* Anchor tag text Decoration none */
 .home_social-icon {
   text-decoration: none;
