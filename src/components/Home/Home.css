@@ -20,6 +20,12 @@
 }
 
 /* Anchor tag text Decoration none */
+.home_social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
 .home_social-icon {
-  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--title_color);
 }
