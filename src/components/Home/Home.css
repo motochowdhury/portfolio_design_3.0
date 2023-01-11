@@ -33,3 +33,18 @@
 .home_social-icon:hover {
   color: var(--title_color_dark);
 }
+
+/* Title Styling */
+
+.home_title {
+  font-size: var(--big_font_size);
+  margin-bottom: var(--mb_0_25);
+}
+
+.home_subtitle {
+  position: relative;
+  font-size: var(--h3_font_size);
+  font-weight: var(--font_normal);
+  padding-left: 5.4rem;
+  margin-bottom: var(--mb_1);
+}
