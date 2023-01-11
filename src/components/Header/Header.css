@@ -18,8 +18,10 @@
 
 .nav_logo,
 .nav_toggle {
+  font-family: "Pecita";
   color: var(--title_color);
   font-weight: var(--font_medium);
+  font-size: var(--h2_font_size);
 }
 
 .nav_list {

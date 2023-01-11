@@ -1,0 +1,11 @@
+.home_content {
+  grid-template-columns: 120px repeat(2, 1fr);
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+/* Anchor tag text Decoration none */
+.home_social-icon {
+  text-decoration: none;
+}

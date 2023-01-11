@@ -5,16 +5,15 @@ export const Data = () => {
     <div className="home_data">
       <div>
         <h1 className="home_title">Abdul Motaleb</h1>
-        <svg width="400" height="35" xmlns="http://www.w3.org/2000/svg">
-          <path
-            id="pathItem"
-            d="M5 5 Q 30 15 170 5"
-            stroke="blue"
-            fill="transparent"
-            stroke-width="7"
-            stroke-linecap="round"
-          />
-        </svg>
+        <h3 className="home_subtitle">MERN stack Developer</h3>
+        <p className="home_description">
+          I am a MARN stack developer, I am comfortable with new technologies. I
+          can bring a value of your company providing New Technology based web
+          services
+        </p>
+        <a href="#contact" className="button button_flex">
+          Say Hello
+        </a>
       </div>
     </div>
   );
